@@ -1,0 +1,27 @@
+{
+  "name": "quicksearch",
+  "version": "0.0.2",
+  "description": "Chrome Extension for quickly searching highlighted text",
+  "main": "background.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "faucet": "0.0.1",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "build": "chmod +x ./build.sh && ./build.sh",
+    "test": "eslint ./*.js && tape test/*.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinkiklee/quicksearch.git"
+  },
+  "keywords": [],
+  "author": "Kevin K. Lee <kevin.kik.lee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinkiklee/quicksearch/issues"
+  },
+  "homepage": "https://github.com/kevinkiklee/quicksearch#readme"
+}
