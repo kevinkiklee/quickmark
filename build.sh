@@ -14,6 +14,5 @@ cd build
 zip -r ./quickmark.zip ./*
 cd ..
 mv build/quickmark.zip ./
-rm -rf ./build
 
 echo "=== Built!!! ==="

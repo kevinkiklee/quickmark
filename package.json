@@ -1,7 +1,7 @@
 {
-  "name": "quicksearch",
-  "version": "0.0.2",
-  "description": "Chrome Extension for quickly searching highlighted text",
+  "name": "quickmark",
+  "version": "0.0.1",
+  "description": "Chrome Extension for bookmarking with hotkeys for each folder",
   "main": "background.js",
   "dependencies": {},
   "devDependencies": {
