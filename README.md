@@ -3,11 +3,12 @@
 **Chrome extension for quickly organizing bookmarks with keyboard shortcut**
 
 * Add a bookmark to a folder assigned to a keyboard shortcut
-* This extension replaces the original `Cmd/Ctrl` + `d`
 
 ## Tasks.
+
+- [x] Bind keyboard shortcuts
+- [ ] Create bookmark dialog
 - [ ] Create a popup panel
-- [ ] Bind keyboard shortcuts
 - [ ] Add shortcut customization
 - [ ] Minify for production.
 - [ ] Create a screencast
