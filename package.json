@@ -5,16 +5,18 @@
   "main": "background.js",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.11.0",
+    "@types/chrome": "0.0.58",
     "faucet": "0.0.1",
     "tape": "^4.8.0",
     "ts-loader": "^3.2.0",
+    "tslint": "^5.9.1",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0"
   },
   "scripts": {
     "build": "chmod +x ./build.sh && ./build.sh",
-    "test": "eslint ./*.js && tape test/*.js | faucet"
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "lint && tape test/*.js | faucet"
   },
   "repository": {
     "type": "git",
