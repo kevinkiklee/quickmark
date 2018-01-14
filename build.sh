@@ -5,10 +5,10 @@ rm quickmark.zip
 rm -rf ./build
 mkdir build
 
-cp -a ./icons ./build
-cp background.js ./build
-cp content.js ./build
-cp manifest.json ./build
+cp -a ./src/icons ./build
+cp ./src/background.js ./build
+cp ./src/content.js ./build
+cp ./src/manifest.json ./build
 
 cd build
 zip -r ./quickmark.zip ./*
