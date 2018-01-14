@@ -1,11 +1,24 @@
-// chrome.runtime.onMessage.addListener(function(request) {
-//   chrome.tabs.query({ active: true }, function(tabs) {
-//     chrome.tabs.create({
-//       url: request.url,
-//       active: request.active,
-//       index: tabs[0].index + 1
-//     })
-//   })
-// })
+chrome.commands.getAll(function (commands) {
+  console.log(commands);
+})
 
-console.log('BACKGROUND!!!');
+chrome.commands.onCommand.addListener(function(command) {
+  console.log(command);
+
+  if (command === 'open-bookmark-dialog') {
+    chrome.tabs.create({
+      url: chrome.extension.getURL('dialog/dialog.html'),
+      active: false
+    }, function(tab) {
+      chrome.windows.create({
+        tabId: tab.id,
+        type: 'popup',
+        focused: true
+      });
+    });
+  }
+});
+
+function setAnswer(answer) {
+  console.log(answer);
+};
